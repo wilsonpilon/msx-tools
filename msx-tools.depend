@@ -1,5 +1,32 @@
 # depslib dependency file v1.0
-1620481030 source:/home/barney/projetos/msx-tools/main.cpp
+1620487446 source:/home/barney/projetos/msx-tools/main.cpp
 	<iostream>
+	<string>
 	<boost/program_options.hpp>
+	"inc/msx.h"
+	"inc/hex_editor.h"
+
+1620482985 /home/barney/projetos/msx-tools/inc/msx.h
+
+1620483014 source:/home/barney/projetos/msx-tools/src/msx-tools.cpp
+	"../inc/msx.h"
+
+1620487113 source:/home/barney/projetos/msx-tools/src/hex-editor.cpp
+	<iostream>
+	<ncurses.h>
+	<string>
+	"../inc/hex-editor.h"
+
+1620486877 /home/barney/projetos/msx-tools/inc/hex-editor.h
+
+1620483014 source:/home/barney/projetos/msx-tools/src/msx_tools.cpp
+	"../inc/msx.h"
+
+1620490983 source:/home/barney/projetos/msx-tools/src/hex_editor.cpp
+	<iostream>
+	<ncurses.h>
+	<string>
+	"../inc/hex_editor.h"
+
+1620487435 /home/barney/projetos/msx-tools/inc/hex_editor.h
 
