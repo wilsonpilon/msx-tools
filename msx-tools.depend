@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1620481030 source:/home/barney/projetos/msx-tools/main.cpp
+	<iostream>
+	<boost/program_options.hpp>
+
