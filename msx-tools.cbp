@@ -11,6 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters="--hex-editor basic.bin" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -36,7 +37,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="inc/hex_editor.h" />
+		<Unit filename="inc/msx.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/hex_editor.cpp" />
+		<Unit filename="src/msx_tools.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
