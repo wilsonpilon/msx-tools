@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <boost/program_options.hpp>
+#include <ncurses.h>
 
 using namespace std;
 using std::string;

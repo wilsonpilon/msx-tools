@@ -6,13 +6,13 @@ IDIR = inc
 ODIR = obj
 LDIR = lib
 SDIR = src
-LIBS = -lm -lncurses -lboost_program_options
+LIBS = -lm -lcdk -lncurses -lboost_program_options
 INCS = -I/usr/include/boost
 CPP = g++
 CPPFLAGS = -g -Wall
-_DEPS = msx.h hex_editor.h
+_DEPS = msx.h hex_editor.h window.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
-_OBJ = main.o msx_tools.o hex_editor.o
+_OBJ = main.o msx_tools.o hex_editor.o window.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 RM = rm -rf
 
