@@ -1,6 +1,6 @@
 #include <iostream>
 #include <ncurses.h>
-//#include <cdk.h>
+#include <cdk.h>
 #include <string>
 
 using std::string;
@@ -14,28 +14,28 @@ using std::cin;
 int hex_editor(string);
 
 int hex_editor(string arquivo) {
-/*
   CDKSCREEN *cdkscreen;
   CDKLABEL *demo;
   WINDOW *screen;
-  string mesg[4];
+  const char *mesg[4];
   screen=initscr();
   cdkscreen = initCDKScreen(screen);
   initCDKColor();
   mesg[0] = "</31>This line should have a yellow foreground and a cyan background.<!31>";
-  mesg[1] = "</05>This line should have a white  foreground and a blue background.<!05>";
-  mesg[2] = "</26>This line should have a yellow foreground and a red  background.<!26>";
+  mesg[1] = "</32>This line should have a white  foreground and a blue background.<!32>";
+  mesg[2] = "</33>This line should have a yellow foreground and a red  background.<!33>";
   mesg[3] = "<C>This line should be set to whatever the screen default is.";
 
-  demo = newCDKLabel (cdkscreen, CENTER, CENTER, mesg[0].c_str(), 1, TRUE, TRUE);
+
+  demo = newCDKLabel (cdkscreen, CENTER, CENTER, mesg, 4, TRUE, TRUE);
 
   drawCDKLabel (demo, TRUE);
   waitCDKLabel (demo, ' ');
 
   destroyCDKLabel (demo);
+
   destroyCDKScreen (cdkscreen);
   endCDK();
-*/
 
 
   int tecla = 0;
