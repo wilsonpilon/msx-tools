@@ -2,49 +2,14 @@
 <project version="4">
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="Fedora wSL (2c4d041f-2cad-458f-a3f2-1f8dc46558ad)">
+      <paths name="CindumelFEDORA (c9f83a9f-2cdd-42c3-9085-c11a62a05c9a)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="Fedora wSL (61b74739-56cf-42d0-90c8-9ed65b819172)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Fedora wSL (a00cb8f9-2737-4092-bffb-99fa287ba805)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Ubuntu WSL (2c67e772-0a87-40e8-acf9-192bf692dc22)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Ubuntu WSL (cb927120-9570-43d6-ba93-c0110fa7d521)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Ubuntu WSL (d245d065-b4ae-4494-a5ac-99aa5ee76bd8)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="WSL (dbcf4cc9-485e-4112-8780-2743a0a91ee6)">
+      <paths name="WSL (5eb8b022-84a6-4b35-8800-3838771266c1)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

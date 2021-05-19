@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/barney/System/Dropbox/2021/projetos/msx-tools
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/barney/System/Dropbox/2021/projetos/msx-tools/cmake-build-debug
