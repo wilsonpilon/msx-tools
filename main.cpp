@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <boost/program_options.hpp>
-#include <ncurses.h>
+#include <final/final.h>
 
 using namespace std;
 using std::string;
@@ -11,7 +11,7 @@ namespace po = boost::program_options;
 #include "hex_editor.h"
 
 
-int main(int ac, char** av)
+int main(int argc, char* argv[])
 {
   po::options_description desc("Opcoes permitidas");
   desc.add_options()
@@ -20,7 +20,7 @@ int main(int ac, char** av)
   ;
 
   po::variables_map vm;
-  po::store(po::parse_command_line(ac, av, desc), vm);
+  po::store(po::parse_command_line(argc, argv, desc), vm);
   po::notify(vm);
 
   if(vm.count("help")) {
@@ -31,10 +31,16 @@ int main(int ac, char** av)
   if(vm.count("hex-editor")) {
     cout << "hex-editor " << vm["hex-editor"].as<string>() << "." << endl;
     hex_editor(vm["hex-editor"].as<string>());
-  } else {
-    cout << "Criando novo arquivo." << endl;
-    hex_editor("noname");
   }
 
-  return 0;
+  finalcut::FApplication app(argc, argv);
+  finalcut::FDialog dialog(&app);
+  dialog.setText ("A dialog");
+  const finalcut::FPoint position{25, 5};
+  const finalcut::FSize size{30, 10};
+  dialog.setGeometry (position, size);
+  finalcut::FWidget::setMainWidget(&dialog);
+  dialog.show();
+  return app.exec();
+
 }

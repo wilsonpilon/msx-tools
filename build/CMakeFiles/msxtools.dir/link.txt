@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/msxtools.dir/main.cpp.o CMakeFiles/msxtools.dir/msx_tools.cpp.o CMakeFiles/msxtools.dir/hex_editor.cpp.o CMakeFiles/msxtools.dir/window.cpp.o  -o msxtools  -lfinal -lncurses /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0 
