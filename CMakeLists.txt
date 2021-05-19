@@ -15,7 +15,7 @@ find_library(NCURSESLIB
             PATHS /usr/lib /usr/local/lib
             )
 
-add_executable(msxtools main.cpp msx_tools.cpp hex_editor.cpp window.cpp)
+add_executable(msxtools main.cpp msx_tools.cpp hex_editor.cpp)
 target_link_libraries(msxtools ${FINALLIB} ${NCURSESLIB} ${Boost_LIBRARIES})
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
