@@ -1,6 +1,22 @@
-#ifndef MSX_H_INCLUDED
-#define MSX_H_INCLUDED
+//
+// Created by barney on 20-May-21.
+//
 
-int nada(int t);
+#ifndef MSX_TOOLS_MSX_H
+#define MSX_TOOLS_MSX_H
 
-#endif // MSX_H_INCLUDED
+
+#include <string>
+
+class MSX {
+  private:
+    std::string modelo;
+    std::string versao;
+  public:
+    std::string getModelo();
+    std::string getVersao();
+    MSX(std::string descricao, std::string numver);
+};
+
+
+#endif //MSX_TOOLS_MSX_H
