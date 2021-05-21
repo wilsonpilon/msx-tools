@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/genphone.dir/Unity/unity_0_cxx.cxx.o  -o ../../genphone  ../../libtvision.a -lncursesw 

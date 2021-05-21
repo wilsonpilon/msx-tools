@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/palette.dir/Unity/unity_0_cxx.cxx.o  -o ../../palette  ../../libtvision.a -lncursesw 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/hello.dir/Unity/unity_0_cxx.cxx.o  -o ../hello  ../libtvision.a -lncursesw 

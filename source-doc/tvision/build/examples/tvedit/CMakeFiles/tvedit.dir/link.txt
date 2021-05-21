@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/tvedit.dir/Unity/unity_0_cxx.cxx.o  -o ../../tvedit  ../../libtvision.a -lncursesw 
