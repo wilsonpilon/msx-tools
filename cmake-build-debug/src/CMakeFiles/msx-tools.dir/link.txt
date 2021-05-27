@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++ -rdynamic CMakeFiles/msx-tools.dir/main.cpp.o -o msx-tools  desktop/libdesktop.a hexeditor/libhexeditor.a msx/libmsx.a -lfinal -lboost_program_options 

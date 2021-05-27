@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/msx.h
+string
+-
+
+/home/barney/projetos/msx-tools/src/msx/msx.cpp
+msx.h
+/home/barney/projetos/msx-tools/src/msx/msx.h
+

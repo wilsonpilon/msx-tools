@@ -1,4 +1,4 @@
-# Install script for directory: /home/barney/projetos/msx-tools
+# Install script for directory: /home/barney/projetos/msx-tools/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,17 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/barney/projetos/msx-tools/build/src/cmake_install.cmake")
+  include("/home/barney/projetos/msx-tools/build/src/desktop/cmake_install.cmake")
+  include("/home/barney/projetos/msx-tools/build/src/hexeditor/cmake_install.cmake")
+  include("/home/barney/projetos/msx-tools/build/src/msx/cmake_install.cmake")
 
 endif()
 
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/barney/projetos/msx-tools/build/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

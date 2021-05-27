@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barney/projetos/msx-tools/build/CMakeFiles /home/barney/projetos/msx-tools/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/barney/projetos/msx-tools/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/barney/projetos/msx-tools/build/CMakeFiles /home/barney/projetos/msx-tools/build/src/hexeditor//CMakeFiles/progress.marks
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/hexeditor/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barney/projetos/msx-tools/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/hexeditor/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,70 +116,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/hexeditor/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/hexeditor/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/barney/projetos/msx-tools/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named msx-tools
+# Convenience name for target.
+src/hexeditor/CMakeFiles/hexeditor.dir/rule:
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/hexeditor/CMakeFiles/hexeditor.dir/rule
+.PHONY : src/hexeditor/CMakeFiles/hexeditor.dir/rule
 
-# Build rule for target.
-msx-tools: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 msx-tools
-.PHONY : msx-tools
+# Convenience name for target.
+hexeditor: src/hexeditor/CMakeFiles/hexeditor.dir/rule
 
-# fast build rule for target.
-msx-tools/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/msx-tools.dir/build.make src/CMakeFiles/msx-tools.dir/build
-.PHONY : msx-tools/fast
-
-#=============================================================================
-# Target rules for targets named desktop
-
-# Build rule for target.
-desktop: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 desktop
-.PHONY : desktop
-
-# fast build rule for target.
-desktop/fast:
-	$(MAKE) $(MAKESILENT) -f src/desktop/CMakeFiles/desktop.dir/build.make src/desktop/CMakeFiles/desktop.dir/build
-.PHONY : desktop/fast
-
-#=============================================================================
-# Target rules for targets named hexeditor
-
-# Build rule for target.
-hexeditor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hexeditor
 .PHONY : hexeditor
 
 # fast build rule for target.
 hexeditor/fast:
-	$(MAKE) $(MAKESILENT) -f src/hexeditor/CMakeFiles/hexeditor.dir/build.make src/hexeditor/CMakeFiles/hexeditor.dir/build
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f src/hexeditor/CMakeFiles/hexeditor.dir/build.make src/hexeditor/CMakeFiles/hexeditor.dir/build
 .PHONY : hexeditor/fast
 
-#=============================================================================
-# Target rules for targets named msx
+hexeditor.o: hexeditor.cpp.o
 
-# Build rule for target.
-msx: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 msx
-.PHONY : msx
+.PHONY : hexeditor.o
 
-# fast build rule for target.
-msx/fast:
-	$(MAKE) $(MAKESILENT) -f src/msx/CMakeFiles/msx.dir/build.make src/msx/CMakeFiles/msx.dir/build
-.PHONY : msx/fast
+# target to build an object file
+hexeditor.cpp.o:
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f src/hexeditor/CMakeFiles/hexeditor.dir/build.make src/hexeditor/CMakeFiles/hexeditor.dir/hexeditor.cpp.o
+.PHONY : hexeditor.cpp.o
+
+hexeditor.i: hexeditor.cpp.i
+
+.PHONY : hexeditor.i
+
+# target to preprocess a source file
+hexeditor.cpp.i:
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f src/hexeditor/CMakeFiles/hexeditor.dir/build.make src/hexeditor/CMakeFiles/hexeditor.dir/hexeditor.cpp.i
+.PHONY : hexeditor.cpp.i
+
+hexeditor.s: hexeditor.cpp.s
+
+.PHONY : hexeditor.s
+
+# target to generate assembly for a file
+hexeditor.cpp.s:
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f src/hexeditor/CMakeFiles/hexeditor.dir/build.make src/hexeditor/CMakeFiles/hexeditor.dir/hexeditor.cpp.s
+.PHONY : hexeditor.cpp.s
 
 # Help Target
 help:
@@ -189,10 +179,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... desktop"
 	@echo "... hexeditor"
-	@echo "... msx"
-	@echo "... msx-tools"
+	@echo "... hexeditor.o"
+	@echo "... hexeditor.i"
+	@echo "... hexeditor.s"
 .PHONY : help
 
 
@@ -204,6 +194,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/barney/projetos/msx-tools/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

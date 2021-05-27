@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmsx.a CMakeFiles/msx.dir/msx.cpp.o
+/usr/bin/ranlib libmsx.a

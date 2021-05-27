@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/hexeditor.h
+
+/home/barney/projetos/msx-tools/src/hexeditor/hexeditor.cpp
+iostream
+-
+final/final.h
+-
+string
+-
+hexeditor.h
+/home/barney/projetos/msx-tools/src/hexeditor/hexeditor.h
+

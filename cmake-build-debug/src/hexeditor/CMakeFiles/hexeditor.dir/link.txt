@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhexeditor.a CMakeFiles/hexeditor.dir/hexeditor.cpp.o
+/usr/bin/ranlib libhexeditor.a

@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/barney/projetos/msx-tools/build/CMakeFiles /home/barney/projetos/msx-tools/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/barney/projetos/msx-tools/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/barney/projetos/msx-tools/build/CMakeFiles /home/barney/projetos/msx-tools/build/src/desktop//CMakeFiles/progress.marks
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/desktop/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/barney/projetos/msx-tools/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/desktop/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,70 +116,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/desktop/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/desktop/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/barney/projetos/msx-tools/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named msx-tools
+# Convenience name for target.
+src/desktop/CMakeFiles/desktop.dir/rule:
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/desktop/CMakeFiles/desktop.dir/rule
+.PHONY : src/desktop/CMakeFiles/desktop.dir/rule
 
-# Build rule for target.
-msx-tools: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 msx-tools
-.PHONY : msx-tools
+# Convenience name for target.
+desktop: src/desktop/CMakeFiles/desktop.dir/rule
 
-# fast build rule for target.
-msx-tools/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/msx-tools.dir/build.make src/CMakeFiles/msx-tools.dir/build
-.PHONY : msx-tools/fast
-
-#=============================================================================
-# Target rules for targets named desktop
-
-# Build rule for target.
-desktop: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 desktop
 .PHONY : desktop
 
 # fast build rule for target.
 desktop/fast:
-	$(MAKE) $(MAKESILENT) -f src/desktop/CMakeFiles/desktop.dir/build.make src/desktop/CMakeFiles/desktop.dir/build
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f src/desktop/CMakeFiles/desktop.dir/build.make src/desktop/CMakeFiles/desktop.dir/build
 .PHONY : desktop/fast
 
-#=============================================================================
-# Target rules for targets named hexeditor
+desktop.o: desktop.cpp.o
 
-# Build rule for target.
-hexeditor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hexeditor
-.PHONY : hexeditor
+.PHONY : desktop.o
 
-# fast build rule for target.
-hexeditor/fast:
-	$(MAKE) $(MAKESILENT) -f src/hexeditor/CMakeFiles/hexeditor.dir/build.make src/hexeditor/CMakeFiles/hexeditor.dir/build
-.PHONY : hexeditor/fast
+# target to build an object file
+desktop.cpp.o:
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f src/desktop/CMakeFiles/desktop.dir/build.make src/desktop/CMakeFiles/desktop.dir/desktop.cpp.o
+.PHONY : desktop.cpp.o
 
-#=============================================================================
-# Target rules for targets named msx
+desktop.i: desktop.cpp.i
 
-# Build rule for target.
-msx: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 msx
-.PHONY : msx
+.PHONY : desktop.i
 
-# fast build rule for target.
-msx/fast:
-	$(MAKE) $(MAKESILENT) -f src/msx/CMakeFiles/msx.dir/build.make src/msx/CMakeFiles/msx.dir/build
-.PHONY : msx/fast
+# target to preprocess a source file
+desktop.cpp.i:
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f src/desktop/CMakeFiles/desktop.dir/build.make src/desktop/CMakeFiles/desktop.dir/desktop.cpp.i
+.PHONY : desktop.cpp.i
+
+desktop.s: desktop.cpp.s
+
+.PHONY : desktop.s
+
+# target to generate assembly for a file
+desktop.cpp.s:
+	cd /home/barney/projetos/msx-tools/build && $(MAKE) $(MAKESILENT) -f src/desktop/CMakeFiles/desktop.dir/build.make src/desktop/CMakeFiles/desktop.dir/desktop.cpp.s
+.PHONY : desktop.cpp.s
 
 # Help Target
 help:
@@ -190,9 +180,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... desktop"
-	@echo "... hexeditor"
-	@echo "... msx"
-	@echo "... msx-tools"
+	@echo "... desktop.o"
+	@echo "... desktop.i"
+	@echo "... desktop.s"
 .PHONY : help
 
 
@@ -204,6 +194,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/barney/projetos/msx-tools/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

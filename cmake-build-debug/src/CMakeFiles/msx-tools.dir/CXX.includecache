@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/desktop.h
+msx.h
+../include/msx.h
+
+../include/hexeditor.h
+
+../include/msx.h
+string
+-
+
+/home/barney/projetos/msx-tools/src/main.cpp
+iostream
+-
+string
+-
+boost/program_options.hpp
+-
+msx.h
+/home/barney/projetos/msx-tools/src/msx.h
+hexeditor.h
+/home/barney/projetos/msx-tools/src/hexeditor.h
+desktop.h
+/home/barney/projetos/msx-tools/src/desktop.h
+msx.h
+/home/barney/projetos/msx-tools/src/msx.h
+
